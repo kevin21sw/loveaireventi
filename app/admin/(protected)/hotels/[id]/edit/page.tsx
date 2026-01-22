@@ -20,7 +20,7 @@ export default async function EditHotelPage({
   const initialData = {
     id: hotel.id,
     name: hotel.name,
-    destination: hotel.destination,
+    destination: hotel.destination as "ANTALYA" | "BODRUM" | "FETHIYE" | "CRETE",
     driveUrl: hotel.driveUrl,
     coverImageUrl: hotel.coverImageUrl
   };
