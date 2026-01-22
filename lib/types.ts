@@ -3,7 +3,7 @@ export type Destination = "ANTALYA" | "BODRUM" | "FETHIYE" | "CRETE";
 export type HotelDTO = {
   id: string;
   name: string;
-  destination: Destination;
+  destination: string;
   driveUrl: string;
   coverImageUrl: string;
   createdAt: string;
