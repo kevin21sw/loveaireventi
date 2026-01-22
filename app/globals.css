@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-brand: #f05325;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+}
