@@ -13,7 +13,7 @@ export type HotelDTO = {
 export type HotelFormData = {
   id: string;
   name: string;
-  destination: Destination;
+  destination: string;
   driveUrl: string;
   coverImageUrl: string;
 };
