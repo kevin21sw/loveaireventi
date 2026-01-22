@@ -10,6 +10,7 @@ export default async function AdminDashboardPage() {
   });
   const hotelDtos = hotels.map((hotel) => ({
     ...hotel,
+    destination: hotel.destination as "ANTALYA" | "BODRUM" | "FETHIYE" | "CRETE",
     createdAt: hotel.createdAt.toISOString(),
     updatedAt: hotel.updatedAt.toISOString()
   }));
