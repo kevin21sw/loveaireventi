@@ -19,8 +19,8 @@ export default function AdminHotelForm({
   const [error, setError] = useState<string | null>(null);
   const [name, setName] = useState(initialData?.name ?? "");
   const [driveUrl, setDriveUrl] = useState(initialData?.driveUrl ?? "");
-  const [destination, setDestination] = useState<Destination>(
-    initialData?.destination ?? "ANTALYA"
+  const [destination, setDestination] = useState(
+    (initialData?.destination as Destination | undefined) ?? "ANTALYA"
   );
   const [coverImage, setCoverImage] = useState<File | null>(null);
 
